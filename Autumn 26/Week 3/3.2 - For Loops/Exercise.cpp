@@ -1,12 +1,14 @@
 #include <iostream>
 
 int main(){
-    int n, counter = 0; // initialisation of counter
-
+    double x, n, p;
+    std::cout << "Enter a number: " << std::endl;
+    std::cin >> x;
+    std::cout << "Enter the power: " << std::endl;
     std::cin >> n;
-
-    while(counter < n){ // condition involving counter
-        std::cout << "hello" << std::endl;
-        counter = counter + 1; // increment/update of counter
+    p = x;
+    for(int i = 1; i < n; i++){
+        p = p * x;
     }
+    std::cout << "Result: " << p << std::endl;
 }
